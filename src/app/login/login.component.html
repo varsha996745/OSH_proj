@@ -1,0 +1,133 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+        
+            
+
+<div class="container" style="height: 550px;">
+  <form [formGroup]="loginuserform" (submit)="loginuser()">
+    
+    <div class="row">
+      
+      <div class="col">
+        <h6 style="text-align:center ;">Log In</h6>
+
+
+        <input type="email" name="email" formControlName="email" placeholder="email address" required>
+        <h6><small  *ngIf="!loginuserform.controls['email'].valid && 
+          loginuserform.controls['email']?.touched " style="color: red;">enter your email here</small></h6>    
+      <!-- </div> -->
+        <input type="password" name="password" formControlName="password" placeholder="Password" required>
+        
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <div class="row">
+                <div class="col-md-2">
+                  <label class="form-check-label" style="margin-left:30px;">remember</label>
+                  </div>
+                <div class="col-md-1">
+                  <input class="form-check-input" type="checkbox" checked />
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      
+          <div class="col">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+      
+        <input type="submit" value="Login">
+        <h6 style="text-align: center;">or</h6>
+      <div class="row">
+        <div class="col-md-6">
+            <a href="#" class="fb btn">
+              <i class="fa-brands fa-facebook"></i> Login with Facebook
+               </a>
+        </div>
+        <div class="col-md-6">
+            <a href="#" class="google btn"><i class="fa-brands fa-google"></i>
+            Login with Google
+          </a>
+        </div>
+      </div>
+      </div>
+      
+      
+    </div>
+  </form>
+</div>
+
+
+  
+<!-- </div> -->
+
+        </div>
+        <div class="col-md-6">
+          <div class="container" style="height: 550px;">
+            <form action="">
+              <div class="row">
+                
+                <div class="col">
+                  <h6 style="text-align:center ;">Create an Account</h6>
+          
+          
+                  <input type="text" name="name" placeholder="full name" required>
+                  <input type="email" name="email" placeholder="email address" required>
+                  <input type="password" name="name" placeholder="password" required>
+                  <input type="password" name="name" placeholder="confirm password" required>
+                  <input type="text" name="name" placeholder="interests" required>
+                  <input type="text" name="name" placeholder="prefered size" required>
+
+                  <div class="row">
+                    <div class="col-md-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <label class="form-check-label" for="form2Example31" > Newsletter </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <label class="form-check-label " for="form2Example31" >By registering you agree with our t&c and privacy policy </label>
+                    </div>
+                  </div>
+
+                  <input type="submit" value="create account">
+
+                  <div class="row">
+                      <div class="col">
+                      <!-- for checkbox -->
+                  
+                      </div>
+                     
+                    </div>
+                 
+                <div class="row">
+                 
+                  
+                </div>
+                </div>
+                
+                
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+    </div>
+</div>
